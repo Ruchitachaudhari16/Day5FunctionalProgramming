@@ -17,6 +17,7 @@ namespace FunctionalPrograms
             Console.WriteLine("4:Quotient Remainder Program");
             Console.WriteLine("5:Swapping Number Program");
             Console.WriteLine("6:Vowel Consonent Program");
+            Console.WriteLine("7:PowerOfTwo Table Program");
             int choice=Convert.ToInt32(Console.ReadLine()); 
             switch (choice) 
             {
@@ -54,6 +55,12 @@ namespace FunctionalPrograms
                     Console.WriteLine("Vowel Consonent Program:");
                     VowelConsonent vowelConsonent = new VowelConsonent();
                     vowelConsonent.checkVowelConsonant();
+                    break;
+
+                    case 7:
+                    Console.WriteLine("PowerofTwo Table Program");
+                    PowerOfTwo powerOfTwo = new PowerOfTwo();
+                    powerOfTwo.powerOfTwotable();
                     break;
             }
             Console.ReadLine();
