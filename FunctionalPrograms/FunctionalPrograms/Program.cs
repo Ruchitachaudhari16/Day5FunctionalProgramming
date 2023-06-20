@@ -14,6 +14,7 @@ namespace FunctionalPrograms
             Console.WriteLine("1:Leap Year Program:");
             Console.WriteLine("2:Even Odd Program");
             Console.WriteLine("3:Largest Number Program");
+            Console.WriteLine("4:Quotient Remainder Program");
             int choice=Convert.ToInt32(Console.ReadLine()); 
             switch (choice) 
             {
@@ -33,6 +34,12 @@ namespace FunctionalPrograms
                     Console.WriteLine("The Largest Number Program");
                     LargestNumber largestNumber = new LargestNumber();
                     largestNumber.checkLargestNumber();
+                    break;
+
+                    case 4:
+                    Console.WriteLine("The Quotient Remainder Program");
+                    QuoRemainder quoRemainder = new QuoRemainder();
+                    quoRemainder.CheckQuoRemain();
                     break;
             }
             Console.ReadLine();
