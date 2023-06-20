@@ -16,6 +16,7 @@ namespace FunctionalPrograms
             Console.WriteLine("3:Largest Number Program");
             Console.WriteLine("4:Quotient Remainder Program");
             Console.WriteLine("5:Swapping Number Program");
+            Console.WriteLine("6:Vowel Consonent Program");
             int choice=Convert.ToInt32(Console.ReadLine()); 
             switch (choice) 
             {
@@ -47,6 +48,12 @@ namespace FunctionalPrograms
                     Console.WriteLine("Swapping Number Program:");
                     SwapNumber swapNumber = new SwapNumber();
                     swapNumber.swapNumbers();
+                    break;
+
+                    case 6:
+                    Console.WriteLine("Vowel Consonent Program:");
+                    VowelConsonent vowelConsonent = new VowelConsonent();
+                    vowelConsonent.checkVowelConsonant();
                     break;
             }
             Console.ReadLine();
