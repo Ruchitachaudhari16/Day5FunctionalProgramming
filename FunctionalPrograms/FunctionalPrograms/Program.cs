@@ -15,6 +15,7 @@ namespace FunctionalPrograms
             Console.WriteLine("2:Even Odd Program");
             Console.WriteLine("3:Largest Number Program");
             Console.WriteLine("4:Quotient Remainder Program");
+            Console.WriteLine("5:Swapping Number Program");
             int choice=Convert.ToInt32(Console.ReadLine()); 
             switch (choice) 
             {
@@ -40,6 +41,12 @@ namespace FunctionalPrograms
                     Console.WriteLine("The Quotient Remainder Program");
                     QuoRemainder quoRemainder = new QuoRemainder();
                     quoRemainder.CheckQuoRemain();
+                    break;
+
+                    case 5:
+                    Console.WriteLine("Swapping Number Program:");
+                    SwapNumber swapNumber = new SwapNumber();
+                    swapNumber.swapNumbers();
                     break;
             }
             Console.ReadLine();
