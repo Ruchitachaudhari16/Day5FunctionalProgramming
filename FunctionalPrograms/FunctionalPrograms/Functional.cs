@@ -22,5 +22,6 @@ namespace FunctionalPrograms
                 Console.WriteLine("Year is not a leap year");
             }
         }
+        
     }
 }
