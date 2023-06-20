@@ -13,6 +13,7 @@ namespace FunctionalPrograms
             Console.WriteLine("Enter Your Choice");
             Console.WriteLine("1:Leap Year Program:");
             Console.WriteLine("2:Even Odd Program");
+            Console.WriteLine("3:Largest Number Program");
             int choice=Convert.ToInt32(Console.ReadLine()); 
             switch (choice) 
             {
@@ -26,6 +27,12 @@ namespace FunctionalPrograms
                     Console.WriteLine("The Even Odd Program");
                     EvenOdd evenOdd = new EvenOdd();
                     evenOdd.Check_EvenOdd();
+                    break;
+
+                    case 3:
+                    Console.WriteLine("The Largest Number Program");
+                    LargestNumber largestNumber = new LargestNumber();
+                    largestNumber.checkLargestNumber();
                     break;
             }
             Console.ReadLine();
