@@ -18,6 +18,7 @@ namespace FunctionalPrograms
             Console.WriteLine("5:Swapping Number Program");
             Console.WriteLine("6:Vowel Consonent Program");
             Console.WriteLine("7:PowerOfTwo Table Program");
+            Console.WriteLine("8:Prime Factor of Number Program");
             int choice=Convert.ToInt32(Console.ReadLine()); 
             switch (choice) 
             {
@@ -61,6 +62,12 @@ namespace FunctionalPrograms
                     Console.WriteLine("PowerofTwo Table Program");
                     PowerOfTwo powerOfTwo = new PowerOfTwo();
                     powerOfTwo.powerOfTwotable();
+                    break;
+
+                    case 8:
+                    Console.WriteLine("Prime Factors PRogram");
+                    PrimeFactors factors = new PrimeFactors();
+                    factors.checkPrimeFactors();
                     break;
             }
             Console.ReadLine();
